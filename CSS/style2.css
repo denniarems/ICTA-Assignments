@@ -1,0 +1,92 @@
+.wrapper {
+  color: white;
+  margin: 0 auto;
+}
+.wrapper div {
+  text-align: center;
+  padding: 5px;
+}
+.footer {
+  background-color: black;
+
+  padding-top: 200px;
+}
+.mid {
+  background-color: black;
+  grid-column: 1/7;
+}
+
+#form {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 80px);
+}
+#form div {
+  /* padding: 10px; */
+  /* border: 2px dashed gray; */
+  height: 40px;
+}
+#first {
+  grid-column: 5/7;
+}
+#last {
+  grid-column: 7/9;
+}
+#email {
+  grid-row: 2/3;
+  grid-column: 6/8;
+}
+#user {
+  grid-column: 6/8;
+  grid-row: 3/4;
+}
+#phone {
+  grid-row: 4/5;
+  grid-column: 6/8;
+}
+#pass {
+  grid-row: 5/6;
+  grid-column: 5/7;
+}
+#pass2 {
+  grid-row: 5/6;
+  grid-column: 7/9;
+}
+
+#submit {
+  grid-row: 6/7;
+  grid-column: 6/8;
+  height: 83px;
+  background-color: black;
+}
+#error {
+  grid-row: 2/5;
+  grid-column: 9/12;
+  color: red;
+  font-family: 'Times New Roman', Times, serif
+  padding-top: 90px;
+}
+button:hover {
+  cursor: pointer;
+}
+.form-control {
+  background-color: black;
+  border: none;
+  border-bottom: 5px solid #bdc3c7;
+}
+.form-control:hover {
+  background-color: rgba(189, 195, 199, 0.3);
+  border-bottom-color: white;
+}
+.form-control:focus {
+  background-color: white;
+  border-bottom-color: green;
+}
+.form-control::placeholder {
+  font-size: 16px;
+  color: white;
+}
+.form-control:focus::placeholder {
+  color: black;
+}

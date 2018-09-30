@@ -1,0 +1,19 @@
+{
+  "name": "opentech",
+  "version": "1.0.0",
+  "description": "opentech news",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denniarems/ICTA-Assignments.git"
+  },
+  "author": "dennis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denniarems/ICTA-Assignments/issues"
+  },
+  "homepage": "https://github.com/denniarems/ICTA-Assignments#readme"
+}

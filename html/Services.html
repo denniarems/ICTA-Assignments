@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Services</title>
+        <link rel="stylesheet" href="/CSS/bootstrap/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="/CSS/style.css"> -->
+        <link rel="stylesheet" href="/CSS/nav.css">
+        <link rel="stylesheet" href="/CSS/style2.css">
+    </head>
+
+    <body onload=document.reg.first.focus()>
+        <div class="wrapper">
+            <div class="nav">
+                <h3 id="open">OpenTecH</h3>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/html/About.html">About</a></li>
+                    <li><a href="/html/Services.html">Service</a></li>
+                </ul>
+                <input type="text" placeholder="Search.." id="search">
+                <button type="submit" class="btn">Search</button>
+            </div>
+            <div class="mid">
+                <div class="container-fluid">
+                    <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Registration
+                        Now</h2>
+                    <form id="form" name="reg">
+                        <p id="error"></p>
+
+                        <div id="first" class="form-group">
+
+                            <input name="first" type="text" class="form-control" required placeholder="First Name">
+                        </div>
+                        <div id="last" class="form-group">
+
+                            <input name="last" type="text" class="form-control" required placeholder="Last Name">
+                        </div>
+                        <div id="email" class="form-group">
+                            <input type="email" name="email" class="form-control" id="1" required placeholder="Email Address">
+                        </div>
+                        <div id="user" class="form-group">
+                            <input name="user" type="text" class="form-control" required placeholder="Username">
+                        </div>
+                        <div id="phone" class="form-group">
+                            <input type="number" name="phone" id="2" class="form-control" required placeholder="Phone Number"
+                                pattern="[9876]{1}[0-9]{9}" title="Please Enter 10 digit Indian Phone Number">
+                        </div>
+                        <div id="pass" class="form-group">
+                            <input id="3" name="pass" type="password" class="form-control" required placeholder="Password">
+                        </div>
+                        <div id="pass2" class="form-group">
+                            <input id="4" type="password" name="pass2" class="form-control" required placeholder="Confirm Password">
+                        </div>
+                        <div id="submit">
+
+                            <button type="submit" onclick="return check();" class="">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+                <h4>Nothing Is Reserved :D You can Fork Me <span><a href="https://github.com/denniarems/ICTA-Assignment/tree/SET_01">here</a></span>
+                    Anytime</h4><br>
+                <h5>Dont ask me.. "y Black?" bcox I Love BLACK!! </h5>
+            </div>
+            <!-- <script src="/CSS/bootstrap/bootstrap.min.js"></script> -->
+            <script src="/js/script.js"></script>
+    </body>
+
+</html>
