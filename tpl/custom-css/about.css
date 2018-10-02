@@ -1,45 +1,32 @@
-.wrapper {
-  color: white;
-  margin: 0 auto;
-}
-.wrapper div {
-  text-align: center;
-  padding: 5px;
-}
-.footer {
-  background-color: black;
-
-  padding-top: 200px;
-}
-.mid {
-  background-color: black;
+.about {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   grid-template-rows: repeat(2, minmax(100px, auto));
 }
 .one {
-  background-color: black;
+  background-color: #141414;
   grid-column: 1/4;
 }
 .two {
-  background-color: black;
+  background-color: #141414;
   grid-column: 1/2;
 }
 .three {
   grid-column: 2/4;
-  background-color: rgb(0, 0, 0);
+  background-color: #141414;
 }
 img {
   border-radius: 30px;
 }
 #des {
   padding: 50px 10px 50px 15px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 18px;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 25px;
+  color: white;
+  font-stretch: semi-expanded;
 }
 table {
   text-align: initial;
-  padding-left: 140px;
 }
 th {
   padding: 30px;
@@ -58,7 +45,7 @@ td {
 }
 .whatsapp:hover {
   background-color: #4caf50;
-  color: black;
+  color: #141414;
   font-size: 22px;
 }
 .telegram {
@@ -66,7 +53,7 @@ td {
 }
 .telegram:hover {
   background-color: #2196f3;
-  color: black;
+  color: #141414;
   font-size: 22px;
 }
 .spans {
