@@ -15,6 +15,7 @@ function check() {
   last.addEventListener("blur", lastVerify, true);
   user.addEventListener("blur", userVerify, true);
   email.addEventListener("blur", emailVerify, true);
+  email.addEventListener("focusout", emailVerify, true);
   phone.addEventListener("blur", phoneVerify, true);
   pass.addEventListener("blur", passVerify, true);
   pass2.addEventListener("blur", pass2Verify, true);
@@ -32,7 +33,7 @@ function check() {
     return false;
   }
 
-  if (!email.value.match(ev)) {
+  if (!ev.test(email.value)) {
     document.getElementById("3").style.borderColor = "#FA0129";
     // document.getElementById("error").innerHTML =
     // "Please enter a valid e-mail address.";
@@ -47,7 +48,7 @@ function check() {
     return false;
   }
 
-  if (!phone.value.match(phoneno)) {
+  if (!phoneno.test(phone.value)) {
     // document.getElementById("error").innerHTML =
     // "Please enter your Phone number.";
     document.getElementById("5").style.borderColor = "#FA0129";
@@ -55,7 +56,7 @@ function check() {
     return false;
   }
 
-  if (!pass.value.match(passw)) {
+  if (!passw.test(pass.value)) {
     // document.getElementById("error").innerHTML =
     // "Input Password and Submit [7 to 15 characters which contain only characters, numeric digits, underscore and first character must be a letter";
     document.getElementById("6").style.borderColor = "#FA0129";
@@ -73,7 +74,7 @@ function check() {
 }
 // event handler functions
 function userVerify() {
-  if (user.value != "" && user.value.length < 3) {
+  if (user.value != "") {
     document.getElementById("4").style.borderColor = "#2ecc71";
     return true;
   }
@@ -93,7 +94,8 @@ function lastVerify() {
   }
 }
 function emailVerify() {
-  if (email.value.match(ev)) {
+  if (ev.test(email.value)) {
+    console.log(ev.test(email.value));
     document.getElementById("3").style.borderColor = "#2ecc71";
 
     return true;
@@ -101,12 +103,12 @@ function emailVerify() {
 }
 function phoneVerify() {
   document.getElementById("5").style.borderColor = "#2ecc71";
-  if (phone.value.match(phoneno)) {
+  if (phoneno.test(phone.value)) {
     return true;
   }
 }
 function passVerify() {
-  if (pass.match(passw)) {
+  if (passw.value != "" && passw.test(pass.value)) {
     document.getElementById("6").style.borderColor = "#2ecc71";
 
     return true;
